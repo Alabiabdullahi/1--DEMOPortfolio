@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1{
+    color: rgb(100, 83, 234);
+}
+
+    .back{
+        border: none;
+        background-color: rgb(93, 87, 87) transparent;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        /* background: transparent; */
+    }
+
+
+    .menu-container{
+        width: 25px;
+        cursor: pointer;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        transition: all ease-in-out 0.4s;
+        position: inherit;
+    }
+    .menu1,.menu2,.menu3{
+        width: 25px;
+        height: 5px;
+        border-bottom: 2px solid white;
+        margin: 0px 6px;
+    }
+    #navbarItems{
+    flex-direction: column;
+}
+
+
+#navbar{
+    background-color: black;
+    width: 90%;
+    display: none;
+    z-index: -1;
+    /* position: absolute; */
+}
+#navbar #navItem{
+    border: 0.5px solid white;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: lighter;
+    display: block;
+    padding-left: 20px;
+    padding-top: 15px;
+    background-color: black;
+}
+#navbar a:hover{
+    color: rgb(100, 83, 234);
+    transform: translateX(3px);
+    transition: linear;
+}
+
+.cancel{
+cursor: pointer;
+position: absolute;
+left: 93%;
+bottom: 40%;
+visibility: hidden;
+/* transition: all ease-in-out 0.4s; */
+}
+
+.x1{
+    border-bottom: 2px solid white;
+    transform:rotate(45deg) translate(-4px);
+   margin-top: 220px;
+   width: 30px;
+}
+
+.x2{
+    border-bottom: 2px solid white;
+    transform:rotate(-45deg)translate(-6px)  ;
+   margin-top: 220px;
+   width: 30px;
+   margin-top: -10px;
+   
+}
+
+</style>
+<body>
+    <div class="back">
+        <div class="cancel">
+            <div class="x1"></div>
+            <div class="x2"></div>
+            
+            </div>
+    <div class="menu-container">
+        <div class="menu1"></div>
+        <div class="menu2"></div>
+        <div class="menu3"></div>
+    </div>
+    <h1 style="text-align: center; color: whitesmoke;">ALABI ABDULLAHI AYODEJI--AAA</h1>
+    <div id="navbar">
+        <div id="navItem">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/resume">Resume</a>
+            <a href="/services">Services</a>
+            <a href="">Portfolio</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <script>
+        const menu = document.querySelector('.menu-container')
+const navbar = document.querySelector('#navbar')
+const cancel = document.querySelector('.cancel')
+
+menu.addEventListener('click', ()=>{
+    
+    navbar.style.display='block'
+     cancel.style.visibility='visible'
+     menu.style.display = 'none'
+
+})
+cancel.addEventListener('click', ()=>{
+    event.preventDefault();
+    navbar.style.display='none'
+     cancel.style.visibility='hidden'
+     menu.style.display = 'block'
+
+})
+    </script>    
+</body>
+</html>

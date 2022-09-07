@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: white;
+    --secondary-color: rgb(100, 83, 234);
+}
+
+body{
+    font-family: sans-serif;
+    color: var(--primary-color);
+    background: url('bg.jpg');
+}
+
+.container{
+    margin: 5%;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+}
+
+.menu{
+    /* margin-left: 66%; */
+    height: 50px;
+    width: 50px; 
+    cursor: pointer;
+    
+}
+.menu div {
+    width: 1rem;
+    height: 0.1rem;
+    margin: 0.1rem;
+    color: white;
+    border-bottom: 2px solid white;
+}
+#navbarItems{
+    flex-direction: column;
+}
+
+
+#navbar{
+    background-color: rgba(32, 32, 32, 0.8);
+    width: 90%;
+    display: none;
+    position: absolute;
+}
+#navbar #navItem{
+    border: 0.5px solid white;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: lighter;
+    display: block;
+    padding-left: 20px;
+    padding-top: 15px;
+    background-color: transparent;
+}
+#navbar a:hover{
+    color: var(--secondary-color);
+    transform: translateX(3px);
+    transition: linear;
+}
+
+#bodyContent{
+     text-align: center;
+    /*justify-content: center;
+    align-items: center;
+    display: flex;*/
+    margin-top: 10%; 
+}
+
+.name #name{
+    font-size: 30px;
+}
+.name .slang{
+    padding-top: 10px;
+}
+.name .slang span{
+    font-weight: bold;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.developBy{
+    margin-top: 32%;
+}
+
+.developBy span{
+    color: var(--secondary-color);
+}
+#icons{
+    margin-top: 5%;
+}
+img{
+    height: 15px;
+    width: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,104 @@
+body{
+    background-color: black;
+}
+
+.hr2{
+    width: 150px;
+    background-color:  rgb(100, 83, 234);;
+    margin-left: 90px;
+    margin-top: -5px;
+    border-bottom: 2px solid rgb(100, 83, 234);
+    user-select: none;
+}
+
+h1{
+    color: white;
+    user-select: none;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+h4{
+    color: gray;
+    user-select: none;
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.webdev-box{
+    border: 1px solid black;
+    width: 400;
+    height: 500;
+    background-color: rgb(62, 60, 60);
+    transition: all, ease-in-out, 0.4s;
+    user-select: none;
+}
+
+.webdev{
+    width: 60px;
+    margin-left: 170px;
+    margin-top: 150px;
+    background-color: skyblue;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: -7px -5px 2px gray;
+    user-select: none;
+}
+
+
+.webmaintain-box{
+    border: 1px solid black;
+    width: 400;
+    height: 500;
+    background-color: rgb(62, 60, 60);
+    transition: all, ease-in-out, 0.4s;
+    user-select: none;
+}
+
+
+.webseo-box{
+    border: 1px solid black;
+    width: 400;
+    height: 500;
+    background-color: rgb(62, 60, 60);
+    transition: all, ease-in-out, 0.4s;
+    user-select: none;
+}
+
+.webseo-box:hover{
+background-color:  rgb(100, 83, 234);
+}
+.webdev-box:hover{
+    background-color:  rgb(100, 83, 234);
+}
+.webmaintain-box:hover{
+    background-color:  rgb(100, 83, 234);
+}
+.webmaintain-box:active{
+    background-color:  rgb(100, 83, 234);
+}
+
+@media only screen and (max-width:600px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+}

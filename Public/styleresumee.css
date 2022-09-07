@@ -1,0 +1,73 @@
+body{
+    background:url('hero-bg.jpg');
+}
+
+.hr2{
+    width: 150px;
+    background-color:  rgb(100, 83, 234);;
+    margin-left: 70px;
+    margin-top: -5px;
+    border-bottom: 2px solid rgb(100, 83, 234);
+    user-select: none;
+}
+
+h1,h2{
+    color: white;
+}
+
+h3{
+    color:rgb(100, 83, 234);
+}
+
+h4{
+    color: gray;
+}
+
+.ruler{
+    border-left: 2px solid gray;
+    height: 240;
+    position: relative;
+}
+
+.circle{
+    border: 1px solid rgb(100, 83, 234);;
+    border-radius: 50%;
+    background-color: rgb(100, 83, 234);;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    margin-top: -8px;
+    margin-left: -9px;
+}
+.together{
+    margin-left: 20px;
+}
+
+.words{
+margin-left: 20px;
+margin-top: -27px;
+position: absolute;
+text-align: justify;
+
+}
+
+.box{
+    border: 1px solid gray;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    margin-top: -10px;
+    position: absolute;
+    width: 200;
+    transition: all ease-in-out 0.4s;
+}
+
+.box:hover{
+background-color:whitesmoke;
+color: rgb(100, 83, 234);
+}
+
+li{
+    text-align: justify;
+    color: white;
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: white;
+    --secondary-color: rgb(41, 166, 207);
+}
+
+body{
+    font-family: sans-serif;
+    color: var(--primary-color);
+   background: url('hero-bg.jpg');
+    transition: all ease-in-out 0.4s;
+}
+
+.container{
+    margin: 5%;
+    /* text-align: center; */
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    margin-bottom: 5%;
+}
+.name p {
+    font-size: 20px;
+    
+}
+.img img{
+    width: 50vh;
+    height: 50vh;
+}
+
+.about h3{
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+.skills p{
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.progress{
+    height: 5px;
+    width: 100px;
+    background-color: grey;
+}
+.bar{
+    height: 5px;
+    width: 70px;
+    background-color: var(--secondary-color);
+}

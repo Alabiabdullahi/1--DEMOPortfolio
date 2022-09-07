@@ -1,0 +1,142 @@
+body{
+    background-color: black
+}
+
+h1{
+    color: #fff;
+}
+
+h4{
+    color: #fff;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hr2{
+    width: 150px;
+    background-color:  rgb(100, 83, 234);;
+    margin-left: 90px;
+    margin-top: -5px;
+    border-bottom: 2px solid rgb(100, 83, 234);
+    user-select: none;
+}
+
+.Email{
+    border: 1px solid black;
+    width: 500;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:  rgb(62, 60, 60);;
+    height: 100;
+}
+
+#cont{
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 45;
+    height: 40;
+    margin-top: 18px;
+    margin-left: 10px;
+    background-color: gray;
+}
+h2{
+    margin-left: 80px;
+    margin-top: -40px;
+}
+
+.img1{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+p{
+    margin-left: 80px;
+    margin-top: -10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+.soc{
+    display: flex;
+   margin-left: 80px;
+   margin-top: -10px;
+   gap: 20px;
+}
+
+.soc-img{
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.menu{
+    /* margin-left: 66%; */
+    height: 50px;
+    width: 50px; 
+    cursor: pointer;
+    
+}
+.menu div {
+    width: 1rem;
+    height: 0.1rem;
+    margin: 0.1rem;
+    color: white;
+    border-bottom: 2px solid white;
+}
+#navbarItems{
+    flex-direction: column;
+}
+
+
+#navbar{
+    background-color: rgba(32, 32, 32, 0.8);
+    width: 90%;
+    display: none;
+    position: absolute;
+}
+#navbar #navItem{
+    border: 0.5px solid white;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: lighter;
+    display: block;
+    padding-left: 20px;
+    padding-top: 15px;
+    background-color: transparent;
+}
+#navbar a:hover{
+    color: var(--secondary-color);
+    transform: translateX(3px);
+    transition: linear;
+}
+
+
+@media only screen and (max-width:600px){
+
+    .Email{
+        width: 400;
+    }
+    #cont{
+        margin-left: 15px;
+    }
+    h2{
+        margin-left: 75px;
+    }
+} 
